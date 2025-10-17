@@ -1,0 +1,10 @@
+const express=require("express")
+const { registerAdmin, loginAdmin, getAllAdmins, getOneAdmin, updateAdmin, deleteAdmin } = require("../controllers/admin")
+const router=express.Router()
+router.post("/register",registerAdmin)
+router.post("/login",loginAdmin)
+router.get("/all",getAllAdmins)
+router.get("/one/:adminId",getOneAdmin)
+router.put("/update/:adminId",updateAdmin)
+router.delete("/delete/:adminId",deleteAdmin)
+module.exports=router

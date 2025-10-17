@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes camel-walk {
+  0% { transform: translateX(-10%); }
+  50% { transform: translateX(50%); }
+  100% { transform: translateX(-10%); }
+}
+
+.camel-walk {
+  animation: camel-walk 20s linear infinite;
+}
+
+@keyframes folk-dance {
+  0%, 100% { transform: rotate(-3deg) scale(1.05); }
+  50% { transform: rotate(3deg) scale(1.1); }
+}
+
+.folk-dance {
+  animation: folk-dance 3s ease-in-out infinite;
+}
